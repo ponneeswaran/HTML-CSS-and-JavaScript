@@ -7,6 +7,26 @@
     <BODY>
         <h1>Please Enter Your Details For Our Dating Website!</h1>
         <form method="post" action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+            <fieldset>
+                <legend>Your Face</legend>
+                
+                <label for="profilePic">Your Image:</label>
+                <input type="file" id="profilePic" name="profilePic" required><br>
+                
+                <label for="imagePreview">Image Preview:</label>
+                <img name="imagePreview" id="imagePreview" width="15%"><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Your General Details</legend>
+                
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Your Full Name" name="name" id="name" required><br>
+                
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required><label for="male">Male</label>
+                <input type="radio" id="femal" name="gender" value="female"><label for="female">Female</label><br>
+            </fieldset>
         </form>
     </BODY>
 </HTML>
